@@ -1,0 +1,16 @@
+.loading-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading-page-icon {
+  width: 300px;
+}
+
+.loading-page-title{
+  padding-bottom: 30px;
+}
