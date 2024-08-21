@@ -1,4 +1,3 @@
-
 # Saphirus PDV
 
 Software para gestão de vendas e controle de estoque.
@@ -21,19 +20,23 @@ Software para gestão de vendas e controle de estoque.
 ## Funcionalidades em Desenvolvimento
 
 ### Login
+
 - [ ] Registro na primeira utilização
 - [ ] Autenticação de usuário
 
 ### Registro de Produtos
+
 - [ ] Adicionar produto
 - [ ] Remover produto
 - [ ] Editar produto
 
 ### Controle de Estoque
+
 - [ ] Registrar entrada de estoque
 - [ ] Registrar saída de estoque
 - [ ] Realizar conferência de estoque
 
 ### Registro de Vendas
+
 - [ ] Realizar vendas
 - [ ] Visualizar histórico de vendas

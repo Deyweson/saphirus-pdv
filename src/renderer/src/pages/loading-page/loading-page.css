@@ -1,4 +1,4 @@
-.loading-page{
+.loading-page {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -11,6 +11,6 @@
   width: 300px;
 }
 
-.loading-page-title{
+.loading-page-title {
   padding-bottom: 30px;
 }
