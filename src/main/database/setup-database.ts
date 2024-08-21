@@ -7,7 +7,7 @@ const dbPath = isDev
   ? path.join(app.getPath('userData'), 'database.db') // Caminho para dev
   : path.join(__dirname, '..', '..', '..', '..', 'database.db') // Caminho para prod
 
-export const setupDatabase = (): void => {
+export const setupDatabase = async (): Promise<void> => {
   const db = new sqlite.Database(dbPath, (err) => {
     if (err) {
       return console.error(err.message)

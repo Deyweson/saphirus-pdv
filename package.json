@@ -23,7 +23,9 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^3.0.0",
+    "@prisma/client": "^5.18.0",
     "electron-router-dom": "^1.0.5",
+    "prisma": "^5.18.0",
     "react-router-dom": "^6.26.1",
     "sqlite3": "^5.1.7"
   },
