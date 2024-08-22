@@ -3,6 +3,9 @@ import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 import { setupDatabase } from './database/setup-database'
+import { IpcFunction } from './database/ipc-functions'
+
+IpcFunction()
 
 function createWindow(): void {
   // Create the browser window.
