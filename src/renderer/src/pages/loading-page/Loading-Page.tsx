@@ -1,16 +1,32 @@
 import './loading-page.css'
 import icon from '../assets/saphirus-icon.png'
 import { Loading } from '../components/loading/loading'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export function LoadingPage(): JSX.Element {
-  const getUserCount = async (): Promise<void> => {
-    const count = await window.api.haveUsers()
-    console.log(count)
-    // if false go to register page
-    // true go to login page
+  const navigate = useNavigate()
+
+  const HaveUsers = (): Promise<boolean> => {
+    const haveUsers = window.api.haveUsers()
+    return haveUsers
   }
 
-  getUserCount()
+  useEffect(() => {
+    try {
+      const checkUsers = async (): Promise<void> => {
+        const haveUsers = await HaveUsers()
+        if (haveUsers) {
+          navigate('/login')
+        } else {
+          navigate('/register')
+        }
+      }
+      checkUsers()
+    } catch (error) {
+      console.error(error)
+    }
+  }, [])
 
   return (
     <div className="loading-page">
